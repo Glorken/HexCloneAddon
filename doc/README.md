@@ -36,7 +36,7 @@ For local testing, create a file called `.env` in the repo root following this t
 
 ```sh
 GITHUB_REPOSITORY=Glorken/HexCloneAddon
-GITHUB_SHA=master
+GITHUB_SHA=main
 GITHUB_PAGES_URL=https://github.com/Glorken/HexCloneAddon
 ```
 

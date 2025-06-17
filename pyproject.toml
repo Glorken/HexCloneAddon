@@ -19,7 +19,7 @@ requires-python = ">=3.11"
 dynamic = ["version", "dependencies", "optional-dependencies"]
 
 [project.urls]
-Homepage = "https://glorken.github.io/HexCloneAddon"
+Homepage = "https://www.cass.gay/HexCloneAddon"
 Source = "https://github.com/Glorken/HexCloneAddon"
 
 # Gradle version/deps

@@ -5,12 +5,12 @@ _src_path: gh:FallingColors/hexdummy
 advanced: true
 capitalize_platforms: false
 classname: HexClone
-default_branch: master
+default_branch: main
 description: HexClone addon for Hex Casting
 display_name: HexClone
 github_repo: HexCloneAddon
 github_user: Glorken
-homepage_url: https://glorken.github.io/HexCloneAddon
+homepage_url: https://www.cass.gay/HexCloneAddon
 java_package: gay.cass.hexclone
 kotlin_package: gay.cass.hexclone
 mappings_name: Mojmap
