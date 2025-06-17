@@ -1,0 +1,8 @@
+{
+  hexdoc: {
+    hexclone: {
+      title: "HexClone Book",
+      description: "HexClone addon for Hex Casting",
+    },
+  }
+}
