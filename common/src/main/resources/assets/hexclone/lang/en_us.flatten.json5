@@ -3,9 +3,9 @@
     book: {
       patterns: {
         spells: {
-          dummy_spells: {
-            "": "Dummy Spells",
-            congratulate: "Remove an entity from the stack, then congratulate them.",
+          cloning: {
+            "": "Cloning",
+            clone: "Creates a copy of your mind, copying your stack and then executing the pattern list on its top. This copy will cast every pattern that you cast, either until you sneak-interact with your staff or your casting device's hex ends.",
           }
         }
       }
@@ -14,13 +14,13 @@
   hexcasting: {
     action: {
       "hexclone:": {
-        congratulate: "Congratulate Player",
+        clone: "Clone Mind",
       },
       // use this to add shortened versions of pattern names if the full name won't fit in the ingame book
       // you don't need to add an entry for every pattern - the above value will be used as a default
       book: {
         "hexclone:": {
-          congratulate: "Congratulate",
+          clone: "Clone Mind",
         }
       }
     }

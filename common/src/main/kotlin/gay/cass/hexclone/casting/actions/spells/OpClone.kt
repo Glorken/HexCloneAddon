@@ -9,8 +9,9 @@ import at.petrak.hexcasting.api.casting.getEntity
 import at.petrak.hexcasting.api.casting.ParticleSpray
 import at.petrak.hexcasting.api.utils.asTranslatedComponent
 import net.minecraft.world.entity.Entity
+import net.minecraft.world.phys.Vec3
 
-object OpCongratulate : SpellAction {
+object OpClone : SpellAction {
     override val argc = 1
 
     override fun execute(args: List<Iota>, env: CastingEnvironment): SpellAction.Result {
@@ -19,15 +20,15 @@ object OpCongratulate : SpellAction {
 
         return SpellAction.Result(
             Spell(target),
-            (0.1 * MediaConstants.DUST_UNIT).toLong(),
-            listOf(ParticleSpray.cloud(target.position().add(0.0, target.eyeHeight / 2.0, 0.0), 1.0))
+            (10.0 * MediaConstants.DUST_UNIT).toLong(),
+            listOf(ParticleSpray(target.position().add(0.0, target.eyeHeight.toDouble(), 0.0), Vec3(0.0, 0.5, 0.0), 0.1, 1.0472))
         )
     }
 
     private data class Spell(val target: Entity) : RenderedSpell {
         // IMPORTANT: do not throw mishaps in this method! mishaps should ONLY be thrown in SpellAction.execute
         override fun cast(env: CastingEnvironment) {
-            env.printMessage("text.hexclone.congrats".asTranslatedComponent(target.displayName));
+            TODO("make the spell actually create a second turing tape, as it were")
         }
     }
 }
